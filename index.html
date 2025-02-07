@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Telegram Web App Demo</title>
+  </head>
+  <body>
+    <h1>Telegram Web App Demo</h1>
+    <p id="status">Инициализация...</p>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+      const tg = window.Telegram.WebApp;
+      
+      const startParam = tg.startParam; 
+ 
+      if (startParam) { 
+          console.log("Параметр запуска:", startParam); 
+      } else { 
+          console.log("Параметр запуска отсутствует."); 
+      }
+    </script>
+  </body>
+</html>
